@@ -37,10 +37,18 @@ h2 {
 .row-3 {
     display: flex;
     align-items: left;
-    justify-content: space-between;
+
     background: #edeef0;
     border-radius: 5px;
     margin-bottom: 25px;
+}
+.row-4 {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 5px;
+    margin-bottom: 25px; 
 }
 #input-name {
     flex: 1;
@@ -77,19 +85,51 @@ h2 {
     border-radius: 15px;
     margin-bottom: 20px;
 }
-
+#input-password{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+#text-show {
+    font-size: 10px;
+}
+#gender-tag {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 .icon{
-    text-indent: 5px;
+    justify-content: space-between;
     color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px; 
 }
+#user{
+    display: flex;
+    margin-top: 8px;
+    color: grey;
+    margin-left: 5px;
+}
+#mail{
+    display: flex;
+    margin-top: 8px;
+    color: grey;
+    margin-left: 5px;
+}
+#lock{
+    display: flex;
+    margin-top: 8px;
+    color: grey;
+    margin-left: 5px;
+}
 
 
 
   
-  /* On screens that are 992px or less, set the background color to blue */
+  /* On screens that are 992px or less*/
   @media screen and (max-width: 1600px) {
     .container {
         width: 100%;
@@ -98,7 +138,7 @@ h2 {
     }
   }
   
-  /* On screens that are 600px or less, set the background color to olive */
+  /* On screens that are 600px or less */
   @media screen and (max-width: 680px) {
     .container {
         width: 100%;
@@ -123,20 +163,23 @@ h2 {
         padding: 16px 50px;
         background: #45b5ff;
         color: #fff;
-        font-size: 10px;
+        font-size: 15px;
         cursor: pointer;
         border-radius: 15px;
         margin-bottom: 20px;
     }
+    #gender-tag {
+        font-size: 15px;
+        padding: 0;
+    }
+   
     .icon{
-        display: flex;
-        flex-wrap: nowrap;
         font-size: 10px;
         color: #002765;
        
     }
     #name-tag {
-        font-size: 12px;
+        font-size: 15px;
         font-family: system-ui;
     }
    
